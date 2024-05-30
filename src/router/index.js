@@ -1,11 +1,31 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import ProductsView from '../views/ProductsView.vue'
+import ContactView from '../views/ContactView.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/products',
+    name: 'products',
+    component: ProductsView,
+    props () {
+      return {
+        nombre: 'Desayunos',
+        descripcion: 'Contamos con desayunso nutritivos y deliciosos',
+        precio: '$2000',
+        cantidad: 'para dos personas',
+      }
+    }
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: ContactView
   },
   {
     path: '/about',

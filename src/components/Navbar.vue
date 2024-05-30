@@ -10,13 +10,25 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item active">
-            <a class="nav-link text-light" href="#">Inicio <span class="sr-only">(current)</span></a>
+            <router-link 
+              class="nav-link text-light"
+              to="/"
+            >Inicio</router-link>
+            <!-- <a class="nav-link text-light" href="#">Inicio <span class="sr-only">(current)</span></a> -->
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Productos</a>
+            <router-link 
+              class="nav-link text-light"
+              to="/products"
+            >Productos</router-link>
+            <!-- <a class="nav-link text-light" href="#">Productos</a> -->
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Contacto</a>
+            <router-link 
+              class="nav-link text-light"
+              to="/contact"
+            >Contacto</router-link>
+            <!-- <a class="nav-link text-light" href="#">Contacto</a> -->
           </li>
         </ul>
       </div>
